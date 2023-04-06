@@ -5,9 +5,9 @@
 pipeline{
 	agent any
 
-	stage {
+	stages {
 		stage('Build') {
-			Steps{
+			steps{
 				echo "Build"
 				echo "Test"
 				echo "Integration Test"
