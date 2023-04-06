@@ -7,19 +7,32 @@ pipeline{
 
 	stage {
 		stage('Build') {
-			echo "Build"
+			Steps{
+				echo "Build"
+				echo "Test"
+				echo "Integration Test"
+			}
+			
 		}
 		stage('Test') {
-			echo "Test"
+			steps{
+				echo "Test"
+			}
 		}
 		stage('Integration Test') {
-			echo "Integration Test"
+			steps{
+				echo "Integration Test"
+			}
 		}
 		stage('Integration1 Test') {
-			echo "Integration1 Test"
+			steps{
+				echo "Integration1 Test"
+			}
 		}
 		stage('Integration2 Test') {
-			echo "Integration2 Test"
+			 steps{
+				echo "Integration2 Test"
+			 }
 		}
 	}
 }
