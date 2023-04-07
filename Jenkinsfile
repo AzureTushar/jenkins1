@@ -5,6 +5,7 @@
 pipeline {
 	//agent any
 	//agent { docker { image 'maven:3.6.3'}}
+	sleep 10
 	agent { docker { image 'node:13.8'}}
 	stages {
 		stage('Build') {
